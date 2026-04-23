@@ -1,7 +1,7 @@
 {
   "name": "Watusi Clones",
   "identifier": "net.adfast.watusi.clones",
-  "sourceURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/apps.json",
+  "sourceURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/apps.json",
   "apps": [
     {
       "name": "WA 01",
@@ -13,7 +13,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB1",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_01.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 01 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -27,7 +27,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB2",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_02.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 02 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -41,7 +41,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB3",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_03.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 03 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -55,7 +55,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB4",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_04.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 04 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -69,7 +69,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB5",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_05.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 05 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -83,7 +83,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB6",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_06.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 06 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -97,7 +97,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB7",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_07.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 07 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -111,7 +111,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB8",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_08.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 08 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -125,7 +125,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB9",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_09.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 09 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     },
@@ -139,7 +139,7 @@
       "versionDescription": "WhatsApp Business clone com Watusi 3 (1.3.9). Bundle ID: net.whatsapp.WhatsAppSMB10",
       "downloadURL": "https://github.com/adfastltda/watusi/releases/download/v1.0/WA_10.ipa",
       "localizedDescription": "WhatsApp Business modificado com Watusi 3. Clone 10 de 10.",
-      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/master/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png",
       "tintColor": "25D366",
       "size": 145752064
     }

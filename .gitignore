@@ -1,5 +1,6 @@
 # IPA original (muito grande)
 *.ipa
+source/*.ipa
 
 # Arquivos temporários
 /tmp/

@@ -42,9 +42,25 @@ Acesse a [página de Releases](https://github.com/adfastltda/watusi/releases) pa
 
 ## ⚙️ Estrutura do Projeto
 
-- `apps.json` - Manifesto no formato AltStore/ESign
-- `clones/` - Pasta com os 10 arquivos IPA gerados
-- `clone_ipa.sh` - Script usado para gerar os clones
+```
+watusi/
+├── apps.json              # Manifesto no formato AltStore/ESign
+├── README.md              # Este arquivo
+├── .gitignore             # Arquivos ignorados pelo git
+├── clones/                # 📦 10 arquivos IPA gerados
+│   ├── WA_01.ipa
+│   ├── WA_02.ipa
+│   ├── ...
+│   └── WA_10.ipa
+├── scripts/               # 🛠️ Scripts de automação
+│   └── clone_ipa.sh       # Script para gerar clones
+├── assets/                # 🎨 Recursos visuais
+│   └── icon.png           # Ícone do app
+├── docs/                  # 📚 Documentação
+│   └── RELEASE_INSTRUCTIONS.md
+└── source/                # 📥 Arquivos fonte
+    └── original.ipa       # IPA original usado como base
+```
 
 ## 📝 Notas
 
