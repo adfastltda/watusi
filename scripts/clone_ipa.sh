@@ -4,8 +4,8 @@
 # Uso: ./clone_ipa.sh
 
 set -e
-
-IPA_ORIGINAL="/root/watusi/net.whatsapp.WhatsAppSMB_26.14.73_watusi3_1.3.9_sl.ipa"
+QNT=30
+IPA_ORIGINAL=$(ls /root/watusi/source/*.ipa | tail -1)
 OUTPUT_DIR="/root/watusi/clones"
 TEMP_DIR="/tmp/ipa_clone_work"
 
@@ -36,15 +36,15 @@ modificar_plist() {
     fi
 }
 
-# Criar 10 clones
-for i in {1..10}; do
+# Criar clones
+for i in $(seq 1 $QNT); do
     NUM=$(printf "%02d" $i)
     CLONE_NAME="WA $NUM"
     BUNDLE_ID="net.whatsapp.WhatsAppSMB$i"
     OUTPUT_IPA="$OUTPUT_DIR/WA_${NUM}.ipa"
     
     echo ""
-    echo "=== Criando clone $i/10: $CLONE_NAME ==="
+    echo "=== Criando clone $i/$QNT: $CLONE_NAME ==="
     echo "   Bundle ID: $BUNDLE_ID"
     
     # Copiar arquivos extraídos para nova pasta
@@ -68,5 +68,5 @@ done
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "=== Concluído! 10 clones criados em: $OUTPUT_DIR ==="
+echo "=== Concluído! $QNT clones criados em: $OUTPUT_DIR ==="
 ls -lh "$OUTPUT_DIR"
