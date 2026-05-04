@@ -1,7 +1,3 @@
-# IPA original (muito grande)
-*.ipa
-source/*.ipa
-
 # Arquivos temporários
 /tmp/
 *.tmp
@@ -18,3 +14,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# IPAs - hospedar via GitHub Releases, não no repositório
+*.ipa
+clones/
+source/

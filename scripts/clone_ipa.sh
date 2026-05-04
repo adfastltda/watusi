@@ -4,7 +4,8 @@
 # Uso: ./clone_ipa.sh
 
 set -e
-QNT=30
+QNT=13
+THREADS=13
 IPA_ORIGINAL=$(ls /root/watusi/source/*.ipa | tail -1)
 OUTPUT_DIR="/root/watusi/clones"
 TEMP_DIR="/tmp/ipa_clone_work"
@@ -36,33 +37,48 @@ modificar_plist() {
     fi
 }
 
-# Criar clones
-for i in $(seq 1 $QNT); do
-    NUM=$(printf "%02d" $i)
-    CLONE_NAME="WA $NUM"
-    BUNDLE_ID="net.whatsapp.WhatsAppSMB$i"
-    OUTPUT_IPA="$OUTPUT_DIR/WA_${NUM}.ipa"
-    
+
+# Função para criar um clone
+criar_clone() {
+    local i=$1
+    local NUM=$(printf "%02d" $i)
+    local CLONE_NAME="WA $NUM"
+    local BUNDLE_ID="net.whatsapp.WhatsAppSMB$i"
+    local OUTPUT_IPA="$OUTPUT_DIR/WA_${NUM}.ipa"
+
     echo ""
     echo "=== Criando clone $i/$QNT: $CLONE_NAME ==="
     echo "   Bundle ID: $BUNDLE_ID"
-    
+
     # Copiar arquivos extraídos para nova pasta
-    CLONE_DIR="$TEMP_DIR/clone_$i"
+    local CLONE_DIR="$TEMP_DIR/clone_$i"
     rm -rf "$CLONE_DIR"
     mkdir -p "$CLONE_DIR"
     cp -r "$TEMP_DIR/Payload" "$CLONE_DIR/"
-    
+
     # Modificar Info.plist
-    PLIST_PATH="$CLONE_DIR/Payload/WhatsApp.app/Info.plist"
+    local PLIST_PATH="$CLONE_DIR/Payload/WhatsApp.app/Info.plist"
     modificar_plist "$PLIST_PATH" "$BUNDLE_ID" "$CLONE_NAME"
-    
+
     # Empacotar novo IPA
     cd "$CLONE_DIR"
     zip -qr "$OUTPUT_IPA" Payload
-    
+
     echo "   Criado: $OUTPUT_IPA"
+}
+
+# Criar clones com paralelização
+for i in $(seq 1 $QNT); do
+    criar_clone $i &
+
+    # Controlar número de threads
+    if (( i % THREADS == 0 )); then
+        wait
+    fi
 done
+
+# Aguardar últimos jobs
+wait
 
 # Limpar arquivos temporários
 rm -rf "$TEMP_DIR"
