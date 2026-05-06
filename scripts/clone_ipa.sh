@@ -4,8 +4,8 @@
 # Uso: ./clone_ipa.sh
 
 set -e
-QNT=13
-THREADS=13
+QNT=30
+THREADS=10
 IPA_ORIGINAL=$(ls /root/watusi/source/*.ipa | tail -1)
 OUTPUT_DIR="/root/watusi/clones"
 TEMP_DIR="/tmp/ipa_clone_work"
