@@ -51,7 +51,7 @@ watusi/
 
 - Cada clone tem um Bundle ID único para permitir instalação lado a lado
 - Todos incluem Watusi 3 (versão 1.3.10)
-- Baseado no WhatsApp Business versão 26.16.74
+- Baseado no WhatsApp Business versão em VERSION
 - Tamanho de cada IPA: ~140MB
 
 ## ⚠️ Aviso

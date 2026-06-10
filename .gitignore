@@ -11,11 +11,14 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.agents
+.codex
 
 # Logs
 *.log
 
 # IPAs - hospedar via GitHub Releases, não no repositório
 *.ipa
-clones/
-source/
+clones/*
+source/*
+tmp/*

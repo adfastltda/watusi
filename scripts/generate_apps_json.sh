@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# Gera o apps.json baseado nos arquivos IPA presentes em /root/watusi/clones/
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Gera o apps.json baseado nos arquivos IPA presentes em clones/
 VERSION_DESCRIPTION="WhatsApp Business clone com Watusi 3 (1.3.10)"
-CLONES_DIR="/root/watusi/clones"
-OUTPUT="/root/watusi/apps.json"
-VERSION="26.16.74"
+CLONES_DIR="$REPO_ROOT/clones"
+OUTPUT="$REPO_ROOT/apps.json"
+VERSION=$(cat "$REPO_ROOT/VERSION")
 RELEASE_TAG="v$VERSION"
 BASE_URL="https://github.com/adfastltda/watusi/releases/download/${RELEASE_TAG}"
 ICON_URL="https://raw.githubusercontent.com/adfastltda/watusi/main/assets/icon.png"
@@ -12,7 +17,13 @@ SOURCE_URL="https://raw.githubusercontent.com/adfastltda/watusi/main/apps.json"
 VERSION_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 # Coletar e ordenar IPAs
-mapfile -t IPAS < <(ls "$CLONES_DIR"/WA_*.ipa 2>/dev/null | sort)
+shopt -s nullglob
+IPAS=("$CLONES_DIR"/WA_*.ipa)
+shopt -u nullglob
+
+if ((${#IPAS[@]} > 1)); then
+    mapfile -t IPAS < <(printf '%s\n' "${IPAS[@]}" | sort)
+fi
 
 if [ ${#IPAS[@]} -eq 0 ]; then
     echo "Nenhum IPA encontrado em $CLONES_DIR"
@@ -35,7 +46,8 @@ EOF
         IPA="${IPAS[$idx]}"
         FILENAME=$(basename "$IPA")
         # Extrai número do nome WA_01.ipa -> 01
-        NUM=$(echo "$FILENAME" | grep -oP '\d+(?=\.ipa)')
+        NUM="${FILENAME#WA_}"
+        NUM="${NUM%.ipa}"
         # Remove zeros à esquerda para o bundle ID
         NUM_INT=$((10#$NUM))
         BUNDLE_ID="net.whatsapp.WhatsAppSMB${NUM_INT}"
