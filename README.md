@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/adfastltda/watusi/master/apps.json
 ### ESign
 1. Abra o ESign
 2. Vá em "Sources" ou "Repositórios"
-3. Adicione a URL: `https://raw.githubusercontent.com/adfastltda/watusi/master/apps.json`
+3. Adicione a URL: `https://raw.githubusercontent.com/adfastltda/watusi/v26.16.74/apps.json`
 4. Os apps aparecerão na lista para instalação
 
 ### AltStore
@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/adfastltda/watusi/master/apps.json
 4. Instale os apps diretamente
 
 ### Download Direto
-Acesse a [página de Releases](https://github.com/adfastltda/watusi/releases) para baixar os arquivos IPA individualmente.
+Acesse a [página de Releases](https://github.com/adfastltda/watusi/releases/tag/v26.16.74) para baixar os arquivos IPA individualmente.
 
 ## ⚙️ Estrutura do Projeto
 
