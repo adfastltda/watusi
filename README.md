@@ -57,3 +57,9 @@ watusi/
 ## ⚠️ Aviso
 
 Estes são mods não oficiais do WhatsApp. Use por sua conta e risco.
+
+## ☕ Buy me a coffee
+
+Se você gostou do trabalho e gostaria de apoiar, fique à vontade para fazer uma doação através do PIX:
+
+Chave tipo Email: `pix@adfastltda.com.br`
