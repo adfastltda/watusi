@@ -1,6 +1,6 @@
 # Watusi Clones
 
-Repositório com 30 clones do WhatsApp Business com Watusi 3 para instalação via ESign, AltStore ou outras lojas iOS.
+Repositório com 50 clones do WhatsApp Business com Watusi 3 para instalação via ESign, AltStore ou outras lojas iOS.
 
 ## 🔗 URL do Repositório (ESign/AltStore)
 
@@ -32,11 +32,11 @@ watusi/
 ├── apps.json              # Manifesto no formato AltStore/ESign
 ├── README.md              # Este arquivo
 ├── .gitignore             # Arquivos ignorados pelo git
-├── clones/                # 📦 30 arquivos IPA gerados
+├── clones/                # 📦 50 arquivos IPA gerados
 │   ├── WA_01.ipa
 │   ├── WA_02.ipa
 │   ├── ...
-│   └── WA_30.ipa
+│   └── WA_50.ipa
 ├── scripts/               # 🛠️ Scripts de automação
 │   └── clone_ipa.sh       # Script para gerar clones
 ├── assets/                # 🎨 Recursos visuais
