@@ -24,7 +24,7 @@ release: build
 	$(MAKE) clean
 	@echo "Archive cleaned up!"
 	@echo "Updating version in README.md..."
-	sed -Ei "s|https://raw.githubusercontent.com/adfastltda/watusi/v[0-9]+\.[0-9]+\.[0-9]+/apps\.json|https://raw.githubusercontent.com/adfastltda/watusi/v$(shell cat VERSION)/apps.json|g" README.md
+	sed -Ei "s|https://raw.githubusercontent.com/adfastltda/watusi/v[0-9]+\.[0-9]+\.[0-9]+/apps\.json|https://raw.githubusercontent.com/adfastltda/watusi/v$(shell cat VERSION)/apps.json|g; s|https://github.com/adfastltda/watusi/releases/tag/v[0-9]+\.[0-9]+\.[0-9]+|https://github.com/adfastltda/watusi/releases/tag/v$(shell cat VERSION)|g" README.md
 	@echo "Pushing to GitHub..."
 	git add .
 	git commit -m "release $(shell cat VERSION)"
